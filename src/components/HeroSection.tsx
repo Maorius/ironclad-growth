@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroYonatan from "@/assets/hero-yonatan.png";
+import heroYonatan from "@/assets/hero-yonatan.jpg";
 
 const HeroSection = () => {
   const scrollToFinalCTA = () => {
@@ -11,15 +11,17 @@ const HeroSection = () => {
     <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
       {/* Subtle texture overlay */}
       <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
-
+      
       <div className="container-premium section-padding relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[80vh]">
           {/* Text Content - Right side in RTL */}
           <div className="order-1 lg:order-1 space-y-8 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight">
-              מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה?
+              מרגיש שהגוף שלך{" "}
+              <span className="text-gradient">לא משדר</span>{" "}
+              את מי שאתה
             </h1>
-
+            
             <p className="text-xl md:text-2xl text-muted-foreground font-light">
               אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
             </p>
@@ -49,8 +51,10 @@ const HeroSection = () => {
               >
                 לקביעת שיחת אפיון בחינם
               </Button>
-
-              <p className="text-sm text-muted-foreground">ללא התחייבות • שיחה של 5–10 דק׳ • נתניה / אונליין</p>
+              
+              <p className="text-sm text-muted-foreground">
+                ללא התחייבות • שיחה של 5–10 דק׳ • נתניה / אונליין
+              </p>
             </div>
           </div>
 
