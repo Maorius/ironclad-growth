@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroYonatan from "@/assets/hero-yonatan.jpg";
+import heroYonatan from "@/assets/hero-yonatan.png";
 
 const HeroSection = () => {
   const scrollToFinalCTA = () => {
