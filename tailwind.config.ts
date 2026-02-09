@@ -64,7 +64,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['Heebo', 'sans-serif'],
+        sans: ['Assistant', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
@@ -86,6 +86,10 @@ export default {
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        "slideUp": {
+          from: { opacity: "0", transform: "translateY(80px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {

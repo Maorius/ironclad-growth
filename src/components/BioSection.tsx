@@ -2,32 +2,53 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import bioYonatan from "@/assets/bio-yonatan.png";
 import { ArrowLeft } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=972532257673&text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%A0%D7%AA%D7%9F,%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%93%D7%A3%20%D7%95%D7%A8%D7%A6%D7%99%D7%AA%D7%99%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%90%D7%A4%D7%99%D7%95%D7%9F%20%D7%91%D7%97%D7%99%D7%A0%D7%9D.%20%20%20";
 
 const BioSection = () => {
+  const imageRef = useRef<HTMLDivElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.2 }
+    );
+    if (imageRef.current) observer.observe(imageRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section className="section-padding bg-background">
+    <section className="section-padding bg-background pb-0">
       <div className="container-premium">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">
           המאמן <span className="text-gradient">שילווה אותך</span>
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image - Left in RTL */}
-          <div className="order-2 lg:order-2 flex justify-center">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
-              <img
-                src={bioYonatan}
-                alt="יונתן עם-שלום"
-                className="relative w-full max-w-lg rounded-2xl shadow-premium object-cover"
-              />
-            </div>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end">
+          {/* Image - pops up from below */}
+          <div
+            ref={imageRef}
+            className={`order-2 lg:order-2 flex justify-center items-end transition-all duration-1000 ease-out ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-24"
+            }`}
+          >
+            <img
+              src={bioYonatan}
+              alt="יונתן עם-שלום"
+              className="w-full max-w-lg object-cover"
+              style={{ marginBottom: '-1px' }}
+            />
           </div>
 
-          {/* Content - Right in RTL */}
-          <div className="order-1 lg:order-1 space-y-6">
+          {/* Content */}
+          <div className="order-1 lg:order-1 space-y-6 pb-12">
             <div className="text-lg leading-relaxed text-foreground/90 space-y-4">
               <p>
                 <span className="text-2xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים מאוד.
