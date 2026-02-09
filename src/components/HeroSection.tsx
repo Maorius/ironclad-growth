@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative overflow-hidden">
       {/* Vibrant green smoke background */}
       <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
       <div className="absolute inset-0">
@@ -19,9 +19,9 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
       </div>
 
-      <div className="container-premium relative z-10 pt-16 md:pt-24 pb-0">
+      <div className="container-premium relative z-10 pt-12 md:pt-16 pb-0">
         {/* Centered headings */}
-        <div className="text-center space-y-6 mb-12 animate-fade-in">
+        <div className="text-center space-y-5 mb-8 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
             מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
           </h1>
@@ -60,7 +60,7 @@ const HeroSection = () => {
         </div>
 
         {/* Image popping from below, aligned left, no bottom gap */}
-        <div className="flex justify-start animate-scale-in">
+        <div className="flex justify-end animate-scale-in">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
             <img
