@@ -7,11 +7,15 @@ const FinalCTASection = () => {
   return (
     <section
       id="final-cta"
-      className="section-padding bg-gradient-hero relative overflow-hidden"
+      className="section-padding relative overflow-hidden"
     >
-      {/* Background glow */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-3xl" />
+      {/* Vibrant green smoke background */}
+      <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
+      <div className="absolute inset-0">
+        <div className="absolute top-0 right-1/4 w-[700px] h-[700px] bg-[hsl(150,60%,20%)] rounded-full blur-[180px] opacity-40" />
+        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-[hsl(160,50%,15%)] rounded-full blur-[150px] opacity-30" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[hsl(170,55%,25%)] rounded-full blur-[200px] opacity-20" />
+        <div className="absolute top-1/3 left-1/3 w-[400px] h-[400px] bg-[hsl(140,40%,18%)] rounded-full blur-[120px] opacity-35" />
       </div>
 
       <div className="container-premium relative z-10">

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap');
 
 /* Premium Fitness Coach Design System - Dark & Elegant */
 
@@ -99,12 +99,12 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     direction: rtl;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Assistant', sans-serif;
     font-weight: 700;
   }
 }
