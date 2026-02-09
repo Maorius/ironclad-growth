@@ -9,7 +9,7 @@ const WhoSection = () => {
   const suitable = [
     "רוצה לעשות שינוי אמיתי ומוכן להשקיע בעצמך",
     "מחפש מסגרת ומעקב שיחזיקו אותך במסלול",
-    "מבין שזה תהליך — לא פתרון קסם של לילה אחד",
+    "מבין שזה תהליך לא פתרון קסם של לילה אחד",
     "פתוח לקבל הכוונה ולעבוד לפי תוכנית",
   ];
 
@@ -25,12 +25,9 @@ const WhoSection = () => {
       <div className="container-premium">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            למי זה מתאים{" "}
-            <span className="text-gradient">(ולמי לא)</span>
+            למי זה מתאים <span className="text-gradient">(ולמי לא)</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
-            ב-10 שניות תדע אם זה בשבילך.
-          </p>
+          <p className="text-xl text-muted-foreground">ב-10 שניות תדע אם זה בשבילך.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
