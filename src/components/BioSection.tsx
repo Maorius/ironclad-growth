@@ -48,7 +48,7 @@ const BioSection = () => {
           </div>
 
           {/* Content */}
-          <div className="order-1 lg:order-1 space-y-6 pb-12">
+          <div className="order-1 lg:order-1 space-y-4 pb-12 lg:-mt-4">
             <div className="text-lg leading-relaxed text-foreground/90 space-y-4">
               <p>
                 <span className="text-2xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים מאוד.
