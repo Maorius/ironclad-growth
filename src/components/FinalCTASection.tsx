@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import smokeBg from "@/assets/smoke-bg.png";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=972532257673&text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%A0%D7%AA%D7%9F,%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%93%D7%A3%20%D7%95%D7%A8%D7%A6%D7%99%D7%AA%D7%99%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%90%D7%A4%D7%99%D7%95%D7%9F%20%D7%91%D7%97%D7%99%D7%A0%D7%9D.%20%20%20";
 
@@ -9,14 +10,9 @@ const FinalCTASection = () => {
       id="final-cta"
       className="section-padding relative overflow-hidden"
     >
-      {/* Vibrant green smoke background */}
-      <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
-      <div className="absolute inset-0">
-        <div className="absolute top-0 right-1/4 w-[700px] h-[700px] bg-[hsl(150,60%,20%)] rounded-full blur-[180px] opacity-40" />
-        <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-[hsl(160,50%,15%)] rounded-full blur-[150px] opacity-30" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-[hsl(170,55%,25%)] rounded-full blur-[200px] opacity-20" />
-        <div className="absolute top-1/3 left-1/3 w-[400px] h-[400px] bg-[hsl(140,40%,18%)] rounded-full blur-[120px] opacity-35" />
-      </div>
+      {/* Smoke background image */}
+      <div className="absolute inset-0 bg-background" />
+      <img src={smokeBg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
 
       <div className="container-premium relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
