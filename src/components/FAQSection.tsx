@@ -1,17 +1,13 @@
 import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=972532257673&text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%A0%D7%AA%D7%9F,%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%93%D7%A3%20%D7%95%D7%A8%D7%A6%D7%99%D7%AA%D7%99%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%90%D7%A4%D7%99%D7%95%D7%9F%20%D7%91%D7%97%D7%99%D7%A0%D7%9D.%20%20%20";
+const WHATSAPP_LINK =
+  "https://api.whatsapp.com/send?phone=972532257673&text=%D7%94%D7%99%D7%99%20%D7%99%D7%95%D7%A0%D7%AA%D7%9F,%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%93%D7%A3%20%D7%95%D7%A8%D7%A6%D7%99%D7%AA%D7%99%20%D7%9C%D7%A7%D7%91%D7%95%D7%A2%20%D7%A9%D7%99%D7%97%D7%AA%20%D7%90%D7%A4%D7%99%D7%95%D7%9F%20%D7%91%D7%97%D7%99%D7%A0%D7%9D.%20%20%20";
 
 const faqs = [
   {
     question: "אין לי זמן, זה באמת מתאים?",
-    answer: "כן. בונים מינימום אפקטיבי ללוז שלך. המטרה היא עקביות — לא להיות מושלם.",
+    answer: "כן. בונים מינימום אפקטיבי ללוז שלך. המטרה היא עקביות לא להיות מושלם.",
   },
   {
     question: "אני מפחד להיפצע / יש לי כאבים",
@@ -64,7 +60,7 @@ const FAQSection = () => {
           <h3 className="text-2xl md:text-3xl font-bold text-foreground">
             אם זה נשמע לך מדויק — כנראה שזה הזמן לבדוק התאמה.
           </h3>
-          
+
           <Button
             asChild
             size="lg"
@@ -77,12 +73,7 @@ const FAQSection = () => {
 
           <p className="text-muted-foreground">
             יש שאלה שלא עניתי עליה?{" "}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               שלח לי הודעה בוואטסאפ
             </a>
           </p>
