@@ -58,7 +58,7 @@ const HeroSection = () => {
         </div>
 
         {/* Image — closer to headings + still sits on the "floor" */}
-        <div className="mt-6 md:mt-6 lg:mt-4 flex justify-center md:justify-end items-end animate-scale-in flex-1">
+        <div className="mt-3 md:mt-4 lg:mt-2 flex justify-center md:justify-end items-end animate-scale-in flex-1">
           <div className="relative self-end">
             <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
             <img
