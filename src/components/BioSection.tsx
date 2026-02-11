@@ -33,7 +33,7 @@ const BioSection = () => {
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-stretch">
-          {/* Image - anchored to floor */}
+          {/* Image */}
           <div
             ref={imageRef}
             className={`order-2 lg:order-2 flex justify-center lg:justify-start items-end transition-all duration-1000 ease-out ${
@@ -48,24 +48,33 @@ const BioSection = () => {
           </div>
 
           {/* Content */}
-          <div className="order-1 lg:order-1 space-y-5 lg:pt-2">
-            <div className="text-lg leading-relaxed text-foreground/90 space-y-4">
+          <div className="order-1 lg:order-1 space-y-6 lg:pt-2">
+            <div className="text-xl md:text-2xl leading-relaxed text-foreground/90 space-y-4">
               <p>
-                <span className="text-2xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים מאוד.
+                <span className="text-3xl md:text-4xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים
+                מאוד.
               </p>
-              <p>הייתי פעם נער שחיף עם כרס, חלש וחסר ביטחון עד שפחדתי להוריד חולצה ליד אנשים.</p>
+
+              <p>
+                הייתי פעם <span className="text-foreground font-semibold">נער שחיף עם כרס</span>, חלש וחסר ביטחון — עד ש
+                <span className="text-foreground font-semibold">פחדתי להוריד חולצה</span> ליד אנשים.
+              </p>
+
               <p>
                 התחלתי להתאמן, חקרתי את התחום לעומק, התאהבתי בקליסטניקס, עברתי גם כושר קרבי, למדתי המון על אימון נכון
-                ושיקום, והיום אני מלווה גברים בתהליך מסודר כדי לחסוך להם את הטעויות שאני עשיתי בדרך.
+                ושיקום — והיום אני מלווה גברים בתהליך מסודר כדי לחסוך להם את הטעויות שאני עשיתי בדרך.
               </p>
-              <p className="text-xl font-medium text-foreground">המטרה: גוף חזק וביטחון בלי קסמים ובלי קיצורי דרך.</p>
+
+              <p className="text-2xl md:text-3xl font-semibold text-foreground">
+                המטרה: גוף חזק וביטחון — בלי קסמים ובלי קיצורי דרך.
+              </p>
             </div>
 
             <div className="space-y-2 py-4 border-y border-border">
-              <p className="text-muted-foreground">
+              <p className="text-base md:text-lg text-foreground/75">
                 <span className="text-primary">•</span> 8 שנות ניסיון • נתניה / אונליין • הסמכות: אימון פונקציונלי
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-base md:text-lg text-foreground/75">
                 <span className="text-primary">•</span> מדריך כושר גופני ובריאות • מאמן אישי
               </p>
             </div>
@@ -74,7 +83,7 @@ const BioSection = () => {
               <Button
                 asChild
                 size="lg"
-                className="text-lg px-8 py-6 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
+                className="text-xl px-10 py-7 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
               >
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                   לקביעת שיחת אפיון בחינם
@@ -83,10 +92,10 @@ const BioSection = () => {
 
               <Link
                 to="/certificates"
-                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium group"
+                className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold group text-lg"
               >
                 לצפייה בתעודות
-                <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+                <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
               </Link>
             </div>
           </div>
