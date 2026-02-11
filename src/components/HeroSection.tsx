@@ -30,7 +30,7 @@ const HeroSection = () => {
             {[
               "לפי הלוז שלך: חדר כושר / בית / פארק",
               "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
-              "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
+              "מעקב שבועי + וואטסאפ שתישאר במסלול ותתקדם",
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3 text-foreground/90">
                 <span className="text-primary text-lg">✓</span>
