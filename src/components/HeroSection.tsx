@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden min-h-screen flex flex-col justify-between">
       {/* Vibrant green smoke background */}
       <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
       <div className="absolute inset-0">
@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
       </div>
 
-      <div className="container-premium relative z-10 pt-12 md:pt-16 pb-0">
+      <div className="container-premium relative z-10 pt-10 md:pt-14 pb-0 flex flex-col flex-1 justify-between">
         {/* Centered headings */}
         <div className="text-center space-y-5 mb-8 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
@@ -36,10 +36,7 @@ const HeroSection = () => {
               "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
               "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
             ].map((item, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 text-foreground/90"
-              >
+              <div key={index} className="flex items-center gap-3 text-foreground/90">
                 <span className="text-primary text-lg">✓</span>
                 <span className="text-lg">{item}</span>
               </div>
@@ -66,8 +63,8 @@ const HeroSection = () => {
             <img
               src={heroYonatan}
               alt="יונתן עם-שלום - מאמן כושר"
-              className="relative w-full max-w-sm lg:max-w-md object-cover animate-[slideUp_0.8s_ease-out_forwards]"
-              style={{ marginBottom: '-1px' }}
+              className="relative w-full max-w-xs md:max-w-sm lg:max-w-md max-h-[45vh] object-contain animate-[slideUp_0.8s_ease-out_forwards]"
+              style={{ marginBottom: "-1px" }}
             />
           </div>
         </div>
