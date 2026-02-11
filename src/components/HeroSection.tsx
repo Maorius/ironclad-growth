@@ -64,7 +64,7 @@ const HeroSection = () => {
             <img
               src={heroYonatan}
               alt="יונתן עם-שלום - מאמן כושר"
-              className="relative w-full max-w-sm lg:max-w-md object-contain animate-[slideUp_0.8s_ease-out_forwards] -mb-1"
+              className="relative w-full max-w-md lg:max-w-lg object-contain scale-105 animate-[slideUp_0.8s_ease-out_forwards] -mb-1"
             />
           </div>
         </div>
