@@ -19,9 +19,9 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
       </div>
 
-      <div className="container-premium relative z-10 pt-8 md:pt-10 pb-0">
+      <div className="container-premium relative z-10 pt-12 md:pt-16 pb-0">
         {/* Centered headings */}
-        <div className="text-center space-y-4 mb-4 animate-fade-in">
+        <div className="text-center space-y-5 mb-8 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
             מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
           </h1>
