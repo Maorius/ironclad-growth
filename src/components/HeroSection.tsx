@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-between">
+    <section className="relative overflow-hidden min-h-[90vh] flex flex-col">
       {/* Vibrant green smoke background */}
       <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
       <div className="absolute inset-0">
@@ -19,18 +19,19 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
       </div>
 
-      <div className="container-premium relative z-10 pt-10 md:pt-14 pb-0 flex flex-col flex-1 justify-between">
-        {/* Centered headings */}
-        <div className="text-center space-y-5 mb-8 animate-fade-in">
+      {/* IMPORTANT: removed justify-between, using controlled gap */}
+      <div className="container-premium relative z-10 pt-8 md:pt-10 pb-0 flex flex-col flex-1">
+        {/* Headings */}
+        <div className="text-center space-y-4 md:space-y-5 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
             מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
             אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
           </p>
 
-          <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-col items-center gap-2 md:gap-3">
             {[
               "לפי הלוז שלך: חדר כושר / בית / פארק",
               "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
@@ -38,12 +39,12 @@ const HeroSection = () => {
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3 text-foreground/90">
                 <span className="text-primary text-lg">✓</span>
-                <span className="text-lg">{item}</span>
+                <span className="text-base md:text-lg">{item}</span>
               </div>
             ))}
           </div>
 
-          <div className="space-y-4 pt-4">
+          <div className="space-y-3 pt-3">
             <Button
               onClick={scrollToFinalCTA}
               size="lg"
@@ -56,15 +57,14 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Image popping from below, aligned left, no bottom gap */}
-        <div className="flex justify-end animate-scale-in">
-          <div className="relative">
+        {/* Image — closer to headings + still sits on the "floor" */}
+        <div className="mt-6 md:mt-6 lg:mt-4 flex justify-center md:justify-end items-end animate-scale-in flex-1">
+          <div className="relative self-end">
             <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
             <img
               src={heroYonatan}
               alt="יונתן עם-שלום - מאמן כושר"
-              className="relative w-full max-w-sm lg:max-w-md object-cover animate-[slideUp_0.8s_ease-out_forwards]"
-              style={{ marginBottom: "-1px" }}
+              className="relative w-full max-w-sm lg:max-w-md object-contain animate-[slideUp_0.8s_ease-out_forwards] -mb-1"
             />
           </div>
         </div>
