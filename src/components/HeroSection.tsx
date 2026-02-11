@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-screen flex flex-col justify-between">
+    <section className="relative overflow-hidden min-h-[90vh] flex flex-col justify-between">
       {/* Vibrant green smoke background */}
       <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
       <div className="absolute inset-0">
