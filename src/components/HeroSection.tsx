@@ -9,33 +9,32 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[78vh] md:min-h-[80vh] flex flex-col">
+    <section className="relative overflow-hidden min-h-[82vh] md:min-h-[85vh] flex flex-col">
       {/* Smoke background image */}
       <div className="absolute inset-0 bg-background" />
       <img src={smokeBg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
-      {/* subtle dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/25" />
 
+      {/* IMPORTANT: removed justify-between, using controlled gap */}
       <div className="container-premium relative z-10 pt-6 md:pt-8 pb-0 flex flex-col flex-1">
         {/* Headings */}
         <div className="text-center space-y-4 md:space-y-5 animate-fade-in">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[1.05] tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
             מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
           </h1>
 
-          <p className="text-xl md:text-3xl text-foreground/90 font-medium max-w-2xl mx-auto">
-            אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
+          <p className="text-lg md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
+            אתה עושה את העבודה אני דואג שתראה מזה תוצאות.
           </p>
 
-          <div className="flex flex-col items-center gap-3 md:gap-3.5 pt-1">
+          <div className="flex flex-col items-center gap-2 md:gap-3">
             {[
               "לפי הלוז שלך: חדר כושר / בית / פארק",
               "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
-              "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
+              "מעקב שבועי + וואטסאפ שתישאר במסלול ותתקדם",
             ].map((item, index) => (
-              <div key={index} className="flex items-center gap-3 text-foreground/95">
-                <span className="text-primary text-xl">✓</span>
-                <span className="text-lg md:text-xl font-medium">{item}</span>
+              <div key={index} className="flex items-center gap-3 text-foreground/90">
+                <span className="text-primary text-lg">✓</span>
+                <span className="text-base md:text-lg">{item}</span>
               </div>
             ))}
           </div>
@@ -44,18 +43,18 @@ const HeroSection = () => {
             <Button
               onClick={scrollToFinalCTA}
               size="lg"
-              className="text-xl px-10 py-7 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
+              className="text-lg px-8 py-6 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
             >
               לקביעת שיחת אפיון בחינם
             </Button>
 
-            <p className="text-base md:text-lg text-foreground/70">ללא התחייבות • שיחה של 5–10 דק׳ • נתניה / אונליין</p>
+            <p className="text-sm text-muted-foreground">ללא התחייבות • שיחה של 5–10 דק׳ • נתניה / אונליין</p>
           </div>
         </div>
 
-        {/* Image — slightly shifted on desktop to give text more “space” */}
+        {/* Image — closer to headings + still sits on the "floor" */}
         <div className="-mt-8 md:-mt-12 lg:-mt-16 flex justify-center md:justify-end items-end animate-scale-in">
-          <div className="relative self-end md:translate-x-6 lg:translate-x-10">
+          <div className="relative self-end">
             <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
             <img
               src={heroYonatan}
