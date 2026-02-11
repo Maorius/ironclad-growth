@@ -58,7 +58,7 @@ const FAQSection = () => {
 
         <div className="text-center mt-16 space-y-6">
           <h3 className="text-2xl md:text-3xl font-bold text-foreground">
-            אם זה נשמע לך מדויק — כנראה שזה הזמן לבדוק התאמה.
+            אם זה נשמע לך מדויק כנראה שזה הזמן לבדוק התאמה.
           </h3>
 
           <Button
