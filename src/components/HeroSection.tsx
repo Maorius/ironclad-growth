@@ -19,9 +19,9 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
       </div>
 
-      <div className="container-premium relative z-10 flex-1 flex flex-col pt-10 md:pt-14 pb-0">
+      <div className="container-premium relative z-10 flex-1 flex flex-col pt-8 md:pt-10 pb-0">
         {/* Headings */}
-        <div className="text-center space-y-4 md:space-y-5 animate-fade-in">
+        <div className="text-center space-y-3 md:space-y-4 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
             מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
           </h1>
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </p>
 
           {/* Bullet Points */}
-          <div className="flex flex-col items-center gap-2 md:gap-3 pt-2">
+          <div className="flex flex-col items-center gap-1.5 md:gap-2 pt-1">
             {[
               "לפי הלוז שלך: חדר כושר / בית / פארק",
               "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
@@ -45,7 +45,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA */}
-          <div className="space-y-3 pt-4">
+          <div className="space-y-2 pt-3">
             <Button
               onClick={scrollToFinalCTA}
               size="lg"
@@ -58,8 +58,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Hero Image — anchored to the "floor" */}
-        <div className="mt-auto flex justify-center md:justify-end items-end animate-scale-in pt-6 md:pt-4">
+        {/* Hero Image — pulled UP closer to headings but still anchored to floor */}
+        <div className="mt-auto flex justify-center md:justify-end items-end animate-scale-in -mt-6 md:-mt-10 lg:-mt-12">
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
             <img
