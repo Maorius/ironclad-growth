@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroYonatan from "@/assets/hero-yonatan2.png";
+import smokeBg from "@/assets/smoke-bg.png";
 
 const HeroSection = () => {
   const scrollToFinalCTA = () => {
@@ -9,15 +10,9 @@ const HeroSection = () => {
 
   return (
     <section className="relative overflow-hidden min-h-[82vh] md:min-h-[85vh] flex flex-col">
-      {/* Vibrant green smoke background */}
-      <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/4 w-[800px] h-[800px] bg-[hsl(150,60%,20%)] rounded-full blur-[180px] opacity-40" />
-        <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-[hsl(160,50%,15%)] rounded-full blur-[150px] opacity-30" />
-        <div className="absolute top-1/3 right-1/3 w-[500px] h-[500px] bg-[hsl(170,55%,25%)] rounded-full blur-[200px] opacity-20" />
-        <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] bg-[hsl(140,40%,18%)] rounded-full blur-[120px] opacity-35" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
-      </div>
+      {/* Smoke background image */}
+      <div className="absolute inset-0 bg-background" />
+      <img src={smokeBg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
 
       {/* IMPORTANT: removed justify-between, using controlled gap */}
       <div className="container-premium relative z-10 pt-6 md:pt-8 pb-0 flex flex-col flex-1">
