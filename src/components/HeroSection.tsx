@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex flex-col">
+    <section className="relative overflow-hidden min-h-[82vh] md:min-h-[85vh] flex flex-col">
       {/* Vibrant green smoke background */}
       <div className="absolute inset-0 bg-[hsl(195,45%,6%)]" />
       <div className="absolute inset-0">
@@ -58,7 +58,7 @@ const HeroSection = () => {
         </div>
 
         {/* Image — closer to headings + still sits on the "floor" */}
-        <div className="mt-3 md:mt-4 lg:mt-2 -mt-6 md:-mt-10 lg:-mt-12 flex justify-center md:justify-end items-end animate-scale-in flex-1">
+        <div className="-mt-8 md:-mt-12 lg:-mt-16 flex justify-center md:justify-end items-end animate-scale-in">
           <div className="relative self-end">
             <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
             <img
