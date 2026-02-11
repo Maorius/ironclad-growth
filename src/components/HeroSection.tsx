@@ -20,7 +20,7 @@ const HeroSection = () => {
       </div>
 
       {/* IMPORTANT: removed justify-between, using controlled gap */}
-      <div className="container-premium relative z-10 pt-8 md:pt-10 pb-0 flex flex-col flex-1">
+      <div className="container-premium relative z-10 pt-6 md:pt-8 pb-0 flex flex-col flex-1">
         {/* Headings */}
         <div className="text-center space-y-4 md:space-y-5 animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
