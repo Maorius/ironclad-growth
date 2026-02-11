@@ -19,18 +19,18 @@ const HeroSection = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[hsl(165,45%,12%)] rounded-full blur-[200px] opacity-25" />
       </div>
 
-      <div className="container-premium relative z-10 pt-4 md:pt-6 pb-0">
+      <div className="container-premium relative z-10 pt-8 md:pt-10 pb-0">
         {/* Centered headings */}
-        <div className="text-center space-y-2 mb-2 animate-fade-in">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
+        <div className="text-center space-y-4 mb-4 animate-fade-in">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight">
             מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground font-light max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
             אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
           </p>
 
-          <div className="flex flex-col items-center gap-1.5">
+          <div className="flex flex-col items-center gap-3">
             {[
               "לפי הלוז שלך: חדר כושר / בית / פארק",
               "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
@@ -41,12 +41,12 @@ const HeroSection = () => {
                 className="flex items-center gap-3 text-foreground/90"
               >
                 <span className="text-primary text-lg">✓</span>
-                <span className="text-base">{item}</span>
+                <span className="text-lg">{item}</span>
               </div>
             ))}
           </div>
 
-          <div className="space-y-2 pt-2">
+          <div className="space-y-4 pt-4">
             <Button
               onClick={scrollToFinalCTA}
               size="lg"
