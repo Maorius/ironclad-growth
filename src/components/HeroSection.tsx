@@ -23,7 +23,7 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto">
-            אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
+            אתה עושה את העבודה אני דואג שתראה מזה תוצאות.
           </p>
 
           <div className="flex flex-col items-center gap-2 md:gap-3">
