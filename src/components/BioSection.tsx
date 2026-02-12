@@ -56,17 +56,18 @@ const BioSection = () => {
               </p>
 
               <p>
-                הייתי פעם <span className="text-foreground font-semibold">נער שחיף עם כרס</span>, חלש וחסר ביטחון עד ש
-                <span className="text-foreground font-semibold">פחדתי להוריד חולצה</span> ליד אנשים.
-              </p>
+                <span className="text-foreground font-semibold">הייתי פעם נער שחיף עם כרס, חלש וחסר ביטחון,</span>
+                <span className="text-foreground font-semibold">עד כדי פחד להוריד חולצה ליד אנשים.</span>
+                <span className="text-foreground font-assistant">החלטתי לשנות.</span>
+                <span className="text-foreground font-assistant">
+                  נכנסתי לעולם הכושר, נשאבתי לקליסטניקס, ובצבא כלוחם למדתי מה זה משמעת אמיתית.
+                </span>
 
-              <p>
-                התחלתי להתאמן, חקרתי את התחום לעומק, התאהבתי בקליסטניקס, עברתי גם כושר קרבי, למדתי המון על אימון נכון
-                ושיקום והיום אני מלווה גברים בתהליך מסודר כדי לחסוך להם את הטעויות שאני עשיתי בדרך.
+                <span className="text-foreground font-assistant">אחרי שנפצעתי חקרתי שיקום ופציעות ספורט לעומק.</span>
               </p>
 
               <p className="text-2xl md:text-3xl font-semibold text-foreground">
-                המטרה: גוף חזק וביטחון בלי קסמים ובלי קיצורי דרך.
+                היום אני עוזר לגברים לבנות גוף חזק וביטחון בצורה מסודרת, בלי קסמים ובלי קיצורי דרך.
               </p>
             </div>
 
