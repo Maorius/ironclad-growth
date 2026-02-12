@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="container-premium relative z-10 py-12 md:py-16">
         <div className="grid items-center gap-10 md:gap-12 md:grid-cols-2">
           {/* TEXT (right on desktop) */}
-          <div className="order-1 md:order-2 text-center md:text-right space-y-4 md:space-y-5 animate-fade-in">
+          <div className="order-2 md:order-1 text-center md:text-right space-y-4 md:space-y-5 animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[1.05] tracking-tight">
               מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
             </h1>
