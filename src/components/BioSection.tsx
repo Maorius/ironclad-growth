@@ -83,10 +83,10 @@ const BioSection = () => {
             </div>
 
             <div className="space-y-2 py-4 border-y border-border">
-              <p className="text-base md:text-lg text-foreground/75">
+              <p className="text-lg md:text-xl text-foreground/75">
                 <span className="text-primary">•</span> 8 שנות ניסיון • נתניה / אונליין • הסמכות: אימון פונקציונלי
               </p>
-              <p className="text-base md:text-lg text-foreground/75">
+              <p className="text-lg md:text-xl text-foreground/75">
                 <span className="text-primary">•</span> מדריך כושר גופני ובריאות • מאמן אישי
               </p>
             </div>

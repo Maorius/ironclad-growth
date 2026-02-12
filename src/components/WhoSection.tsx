@@ -43,7 +43,7 @@ const WhoSection = () => {
               {suitable.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground/90">{item}</span>
+                  <span className="text-lg text-foreground/90">{item}</span>
                 </li>
               ))}
             </ul>
@@ -61,7 +61,7 @@ const WhoSection = () => {
               {notSuitable.map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <X className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
-                  <span className="text-foreground/90">{item}</span>
+                  <span className="text-lg text-foreground/90">{item}</span>
                 </li>
               ))}
             </ul>

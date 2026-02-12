@@ -64,14 +64,14 @@ const FAQSection = () => {
           <Button
             asChild
             size="lg"
-            className="text-lg px-8 py-6 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
+            className="text-xl px-8 py-6 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
           >
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               לקביעת שיחת אפיון בחינם
             </a>
           </Button>
 
-          <p className="text-muted-foreground">
+          <p className="text-lg text-muted-foreground">
             יש שאלה שלא עניתי עליה?{" "}
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               שלח לי הודעה בוואטסאפ

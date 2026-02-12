@@ -28,7 +28,7 @@ const ServicesSection = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             מפסיקים לנחש. <span className="text-gradient">מתחילים להתקדם.</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
             ליווי שמחזיק אותך בין האימונים עד שרואים שינוי
           </p>
         </div>
@@ -49,7 +49,7 @@ const ServicesSection = () => {
               </div>
               <div className="p-6 lg:p-8 space-y-3">
                 <h3 className="text-2xl font-bold text-foreground">{service.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                <p className="text-lg text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             </div>
           ))}
