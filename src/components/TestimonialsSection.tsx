@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
             לא עוד דיבורים.{" "}
             <span className="text-gradient">הנה מה שגברים שעשו איתי תהליך אומרים.</span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl md:text-2xl text-muted-foreground">
             אנשים אמיתיים. מילים שלהם. שינוי אמיתי.
           </p>
         </div>
@@ -123,7 +123,7 @@ const TestimonialsSection = () => {
           <Button
             asChild
             size="lg"
-            className="text-lg px-8 py-6 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
+            className="text-xl px-8 py-6 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
           >
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
               לקביעת שיחת אפיון בחינם

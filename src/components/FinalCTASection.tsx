@@ -21,7 +21,7 @@ const FinalCTASection = () => {
             <span className="text-gradient">להישאר תקוע?</span>
           </h2>
 
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl md:text-2xl text-muted-foreground">
             בלי התחייבות • שיחה של 5–10 דק׳
           </p>
 
@@ -29,7 +29,7 @@ const FinalCTASection = () => {
             <Button
               asChild
               size="lg"
-              className="text-xl px-10 py-7 font-semibold shadow-glow hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
+              className="text-2xl px-10 py-7 font-semibold shadow-glow hover:shadow-primary/50 transition-all duration-300 hover:scale-105"
             >
               <a
                 href={WHATSAPP_LINK}
@@ -42,12 +42,12 @@ const FinalCTASection = () => {
               </a>
             </Button>
 
-            <p className="mt-4 text-muted-foreground">
+            <p className="mt-4 text-lg text-muted-foreground">
               מענה מהיר בוואטסאפ
             </p>
           </div>
 
-          <p className="text-muted-foreground pt-8">
+          <p className="text-lg text-muted-foreground pt-8">
             יש עוד שאלה?{" "}
             <a
               href={WHATSAPP_LINK}
