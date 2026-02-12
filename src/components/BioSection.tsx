@@ -91,7 +91,7 @@ const BioSection = () => {
               </Button>
 
               <Link
-                to="/certificates"
+                to="/certificates-page"
                 className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-semibold group text-lg"
               >
                 לצפייה בתעודות
