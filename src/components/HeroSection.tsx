@@ -68,11 +68,11 @@ const HeroSection = () => {
               >
                 לקביעת שיחת אפיון בחינם
               </Button>
-            </div>
 
-            <p className="text-base md:text-lg lg:text-xl text-foreground/70 w-full max-w-[48ch] mx-auto md:ml-auto text-center">
-              ללא התחייבות • שיחה של 5–10 דק׳ • נתניה / אונליין
-            </p>
+              <p className="text-base md:text-lg lg:text-xl text-foreground/70 text-center w-full">
+                ללא התחייבות • שיחה של 5–10 דק׳ • נתניה / אונליין
+              </p>
+            </div>
           </div>
         </div>
       </div>

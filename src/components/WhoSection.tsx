@@ -71,7 +71,7 @@ const WhoSection = () => {
         <div className="text-center mt-12">
           <button
             onClick={scrollToFinalCTA}
-            className="text-primary hover:text-primary/80 font-medium transition-colors text-lg"
+            className="text-primary hover:text-primary/80 font-medium transition-colors text-2xl md:text-3xl"
           >
             נשמע מתאים? בוא נבדוק ←
           </button>
