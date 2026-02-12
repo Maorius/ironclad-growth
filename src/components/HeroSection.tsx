@@ -2,16 +2,16 @@ import { Button } from "@/components/ui/button";
 import heroYonatan from "@/assets/hero-yonatan2.png";
 import smokeBg from "@/assets/smoke-bg.png";
 
+const bullets = [
+  "לפי הלוז שלך: חדר כושר / בית / פארק",
+  "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
+  "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
+];
+
 const HeroSection = () => {
   const scrollToFinalCTA = () => {
     document.getElementById("final-cta")?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const bullets = [
-    "לפי הלוז שלך: חדר כושר / בית / פארק",
-    "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
-    "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
-  ];
 
   return (
     <section className="relative overflow-hidden">
@@ -21,15 +21,17 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/30" />
 
       <div className="container-premium relative z-10 py-12 md:py-16">
-        <div className="grid items-center gap-10 md:gap-12 md:grid-cols-2">
+        {/* IMPORTANT: items-end anchors image column to bottom */}
+        <div className="grid items-end gap-10 md:gap-12 md:grid-cols-2">
           {/* IMAGE (left on desktop) */}
-          <div className="order-2 md:order-1 flex justify-center md:justify-start animate-scale-in">
-            <div className="relative -mt-6 sm:-mt-4 md:mt-0 md:-translate-y-3">
+          <div className="order-2 md:order-1 self-end flex justify-center md:justify-start animate-scale-in">
+            {/* Fixed height + absolute bottom = no floating even with transparent PNG */}
+            <div className="relative w-full h-[360px] sm:h-[420px] md:h-[520px] lg:h-[600px]">
               <div className="absolute -inset-6 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
               <img
                 src={heroYonatan}
                 alt="יונתן עם-שלום - מאמן כושר"
-                className="relative w-[86%] max-w-sm md:w-full md:max-w-lg object-contain drop-shadow-2xl"
+                className="absolute bottom-0 left-0 right-0 mx-auto md:mx-0 md:right-auto w-[82%] max-w-md md:w-full md:max-w-lg object-contain drop-shadow-2xl"
               />
             </div>
           </div>
@@ -40,20 +42,22 @@ const HeroSection = () => {
               מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
             </h1>
 
-            <p className="text-lg md:text-2xl lg:text-3xl text-foreground/90 font-medium max-w-[32ch] md:max-w-[38ch] mx-auto md:mr-0 md:ml-auto">
+            <p className="text-lg md:text-2xl lg:text-3xl text-foreground/90 font-medium max-w-[38ch] mx-auto md:ml-auto">
               אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
             </p>
 
-            <ul className="pt-1 space-y-2.5 text-foreground/95 text-base md:text-lg lg:text-xl font-medium mx-auto md:mr-0 md:ml-auto max-w-[48ch]">
-              {bullets.map((item, index) => (
-                <li key={index} className="relative pr-7 text-right leading-relaxed">
+            {/* RTL bullets: checkmark anchored on the right */}
+            <ul className="space-y-2.5 pt-1 text-base md:text-lg lg:text-xl font-medium text-foreground/95 max-w-[48ch] mx-auto md:ml-auto">
+              {bullets.map((item, i) => (
+                <li key={i} className="relative pr-7 text-right leading-relaxed">
                   <span className="absolute right-0 top-1 text-primary text-xl leading-none">✓</span>
                   {item}
                 </li>
               ))}
             </ul>
 
-            <div className="pt-3 flex flex-col items-center md:items-end space-y-3">
+            {/* CTA aligned right on desktop */}
+            <div className="pt-3 flex flex-col items-center md:items-end gap-3">
               <Button
                 onClick={scrollToFinalCTA}
                 size="lg"
