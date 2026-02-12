@@ -58,8 +58,8 @@ const BioSection = () => {
 
               <p>
                 <span className="text-foreground font-semibold">פעם הייתי נער שחיף עם כרס. חלש, חסר ביטחון, </span>
-                <span className="text-foreground font-semibold">עד שפחדתי להוריד חולצה ליד אנשים.</span>
-                <span className="text-foreground font-semibold">החלטתי לשנות.</span>
+                <span className="text-foreground font-semibold">עד שפחדתי להוריד חולצה ליד אנשים. </span>
+                <span className="text-foreground font-semibold">החלטתי לשנות. </span>
                 <span className="text-foreground font-semibold">
                   {" "}
                   נכנסתי לעולם הכושר, נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
@@ -72,7 +72,7 @@ const BioSection = () => {
                 </span>
 
                 <span className="text-foreground font-semibold">
-                  היום אני עוזר לגברים להשיג שליטה וביטחון על הגוף שלהם באמצעות שיטה ייחודית שאני פיתחתי.
+                  היום אני עוזר לגברים להשיג שליטה וביטחון על הגוף שלהם באמצעות שיטה ייחודית שאני פיתחתי.{" "}
                 </span>
 
                 <span className="text-foreground font-semibold">על מנת שתוכלו להחזיר שליטה על הגוף שלכם</span>
