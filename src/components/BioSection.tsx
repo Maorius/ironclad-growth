@@ -51,36 +51,23 @@ const BioSection = () => {
           <div className="order-1 lg:order-1 space-y-6 lg:pt-2">
             <div className="text-xl md:text-2xl leading-relaxed text-foreground/90 space-y-4">
               <p>
-                <span className="text-3xl md:text-4xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים
-                מאוד.
+                <span className="text-3xl md:text-4xl font-semibold text-foreground">
+                  שמי יונתן עם-שלום , נעים מאוד.
+                </span>
               </p>
 
               <p>
-                <span className="text-foreground font-semibold">פעם הייתי נער שחיף עם כרס. חלש, חסר ביטחון, </span>
-                <span className="text-foreground font-semibold">עד שפחדתי להוריד חולצה ליד אנשים.</span>
-                <span className="text-foreground font-semibold">התחלתי להתאמן “בקטנה” וזה לא עבד.</span>
-                <span className="text-foreground font-semibold">
-                  אז עשיתי מה שרוב האנשים לא עושים: חקרתי לעומק, למדתי, ניסיתי, טעיתי, תיקנתי.
-                </span>
-                <span className="text-foreground font-semibold">
-                  {" "}
-                  ככה הגעתי לקליסטניקס והתאהבתי בשיטה שמלמדת אותך לשלוט בגוף שלך באמת.
-                </span>
-                <span className="text-foreground font-semibold">
-                  בצבא כלוחם נחשפתי לכושר קרבי, ומשם הבנתי שהמשחק האמיתי הוא מנטלי.
-                </span>
-                <span className="text-foreground font-semibold">
-                  {" "}
-                  בתקופת השירות גם נפצעתי, וזה הכריח אותי ללמוד שיקום ופציעות ספורט כמו מקצוע, לא כמו גוגל.
-                </span>
-                <span className="text-foreground font-semibold">היום אני מלווה גברים אונליין בתהליך מסודר:</span>
-                <span className="text-foreground font-semibold">
-                  תוכנית אימונים מותאמת אישית + מעקב יומיומי + התאמות חכמות, כדי שתראה שינוי שבוע אחרי שבוע.
-                </span>
+                הייתי פעם <span className="text-foreground font-semibold">נער שחיף עם כרס</span>, חלש וחסר ביטחון עד ש
+                <span className="text-foreground font-semibold">פחדתי להוריד חולצה</span> ליד אנשים.
+              </p>
+
+              <p>
+                התחלתי להתאמן, חקרתי את התחום לעומק, התאהבתי בקליסטניקס, עברתי גם כושר קרבי, למדתי המון על אימון נכון
+                ושיקום והיום אני מלווה גברים בתהליך מסודר כדי לחסוך להם את הטעויות שאני עשיתי בדרך.
               </p>
 
               <p className="text-2xl md:text-3xl font-semibold text-foreground">
-                המטרה שלי פשוטה: גוף חזק וביטחון. בלי קסמים ובלי קיצורי דרך.
+                המטרה: גוף חזק וביטחון בלי קסמים ובלי קיצורי דרך.
               </p>
             </div>
 
