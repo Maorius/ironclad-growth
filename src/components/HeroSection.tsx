@@ -23,14 +23,13 @@ const HeroSection = () => {
       <div className="container-premium relative z-10 py-12 md:py-16">
         <div className="grid items-center gap-10 md:gap-12 md:grid-cols-2">
           {/* IMAGE (left on desktop) */}
-
-          <div className="mt-auto flex justify-center md:justify-end items-end animate-scale-in pb-2 md:pb-0">
-            <div className="relative self-end md:translate-x-6 lg:translate-x-10">
-              <div className="absolute -inset-4 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
+          <div className="order-2 md:order-1 flex justify-center md:justify-start animate-scale-in">
+            <div className="relative -mt-6 sm:-mt-4 md:mt-0 md:-translate-y-3">
+              <div className="absolute -inset-6 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
               <img
                 src={heroYonatan}
                 alt="יונתן עם-שלום - מאמן כושר"
-                className="relative w-full max-w-md lg:max-w-lg object-contain scale-105 -mb-6"
+                className="relative w-[86%] max-w-sm md:w-full md:max-w-lg object-contain drop-shadow-2xl"
               />
             </div>
           </div>
