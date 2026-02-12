@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="container-premium relative z-10 py-12 md:py-16">
         <div className="grid items-center gap-10 md:gap-12 md:grid-cols-2">
           {/* IMAGE (left on desktop) */}
-          <div className="order-1 md:order-2 flex justify-center md:justify-start animate-scale-in">
+          <div className="order-2 md:order-1 flex justify-center md:justify-start animate-scale-in">
             <div className="relative -mt-6 sm:-mt-4 md:mt-0 md:-translate-y-3">
               <div className="absolute -inset-6 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
               <img
