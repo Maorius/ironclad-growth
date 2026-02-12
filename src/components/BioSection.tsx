@@ -59,22 +59,22 @@ const BioSection = () => {
               <p>
                 <span className="text-foreground font-semibold">פעם הייתי נער שחיף עם כרס. חלש, חסר ביטחון, </span>
                 <span className="text-foreground font-semibold">עד שפחדתי להוריד חולצה ליד אנשים.</span>
-                <span className="text-foreground font-semibold">התחלתי להתאמן “בקטנה” וזה לא עבד.</span>
+                <span className="text-foreground font-semibold">התחלתי להתאמן “בקטנה” וזה לא הספיק.</span>
                 <span className="text-foreground font-semibold">
                   אז עשיתי מה שרוב האנשים לא עושים: חקרתי לעומק, למדתי, ניסיתי, טעיתי, תיקנתי.
                 </span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  ככה הגעתי לקליסטניקס והתאהבתי בשיטה שמלמדת אותך לשלוט בגוף שלך באמת.
+                  ככה הגעתי לקליסטניקס והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.
                 </span>
-                <span className="text-foreground font-semibold">
-                  בצבא כלוחם נחשפתי לכושר קרבי, ומשם הבנתי שהמשחק האמיתי הוא מנטלי.
-                </span>
+                <span className="text-foreground font-semibold">בצבא כלוחם נחשפתי לכושר קרבי ולמשחק המנטלי.</span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  בתקופת השירות גם נפצעתי, וזה הכריח אותי ללמוד שיקום ופציעות ספורט כמו מקצוע, לא כמו גוגל.
+                  בתקופת השירות גם נפצעתי, וזה הכריח אותי ללמוד שיקום ופציעות ספורט כמו שצריך ברמה מקצועית.
                 </span>
-                <span className="text-foreground font-semibold">היום אני מלווה גברים אונליין בתהליך מסודר:</span>
+                <span className="text-foreground font-semibold">
+                  היום אני מלווה גברים אונליין ובפרונטלי בנתניה בתהליך מסודר:
+                </span>
                 <span className="text-foreground font-semibold">
                   תוכנית אימונים מותאמת אישית + מעקב יומיומי + התאמות חכמות, כדי שתראה שינוי שבוע אחרי שבוע.
                 </span>
