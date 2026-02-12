@@ -26,7 +26,7 @@ const HeroSection = () => {
               אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
             </p>
 
-            <div className="flex flex-col items-center md:items-start gap-2.5 pt-1">
+            <div className="flex flex-col items-end gap-2.5">
               {[
                 "לפי הלוז שלך: חדר כושר / בית / פארק",
                 "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
@@ -39,7 +39,7 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-col items-center md:items-end">
+            <div className="space-y-3 pt-3">
               <Button
                 onClick={scrollToFinalCTA}
                 size="lg"
