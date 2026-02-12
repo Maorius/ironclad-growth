@@ -74,7 +74,7 @@ const BioSection = () => {
                   כשאין חשק.{" "}
                 </span>
 
-                <span className="text-foreground font-semibold">על מנת שתוכלו להחזיר שליטה על הגוף שלכם</span>
+                <span className="text-foreground font-semibold">על מנת שתוכלו להחזיר שליטה על הגוף שלכם.</span>
               </p>
 
               <p className="text-2xl md:text-3xl font-semibold text-foreground">
