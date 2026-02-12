@@ -26,7 +26,7 @@ const HeroSection = () => {
               אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
             </p>
 
-            <div className="md:items-end">
+            <div className="flex flex-col items-center md:items-start gap-2.5 pt-1">
               {[
                 "לפי הלוז שלך: חדר כושר / בית / פארק",
                 "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
