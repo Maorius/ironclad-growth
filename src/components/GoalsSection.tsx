@@ -21,10 +21,10 @@ const GoalsSection = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setTitleInView(true);
-          observer.disconnect(); // run once
+          observer.disconnect(); // פעם אחת וזהו
         }
       },
-      { threshold: 0.25, rootMargin: "0px 0px -10% 0px" },
+      { threshold: 0.2 },
     );
 
     observer.observe(el);
