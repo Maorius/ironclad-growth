@@ -46,9 +46,7 @@ const CertificatesPage = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
               תעודות <span className="text-gradient">והסמכות</span>
             </h1>
-            <p className="text-xl text-muted-foreground">
-              לשקיפות מלאה — הנה ההסמכות שלי.
-            </p>
+            <p className="text-xl text-muted-foreground">לשקיפות מלאה הנה ההסמכות שלי.</p>
           </div>
 
           {/* Carousel */}
@@ -67,9 +65,7 @@ const CertificatesPage = () => {
               </div>
 
               {/* Title */}
-              <h2 className="text-2xl font-bold text-center mb-6">
-                {certificates[currentIndex].title}
-              </h2>
+              <h2 className="text-2xl font-bold text-center mb-6">{certificates[currentIndex].title}</h2>
 
               {/* Navigation */}
               <div className="flex items-center justify-center gap-4">
@@ -86,9 +82,7 @@ const CertificatesPage = () => {
                       key={index}
                       onClick={() => setCurrentIndex(index)}
                       className={`w-3 h-3 rounded-full transition-colors ${
-                        index === currentIndex
-                          ? "bg-primary"
-                          : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                        index === currentIndex ? "bg-primary" : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
                       }`}
                     />
                   ))}
