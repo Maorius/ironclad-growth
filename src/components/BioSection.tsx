@@ -59,19 +59,16 @@ const BioSection = () => {
               <p>
                 <span className="text-foreground font-semibold">פעם הייתי נער שחיף עם כרס. חלש, חסר ביטחון, </span>
                 <span className="text-foreground font-semibold">עד שפחדתי להוריד חולצה ליד אנשים.</span>
-                <span className="text-foreground font-semibold">התחלתי להתאמן “בקטנה” וזה לא הספיק.</span>
-                <span className="text-foreground font-semibold">
-                  אז עשיתי מה שרוב האנשים לא עושים: חקרתי לעומק, למדתי, ניסיתי, טעיתי, תיקנתי.
-                </span>
+                <span className="text-foreground font-semibold">החלטתי לשנות.</span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  ככה הגעתי לקליסטניקס והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.
+                  נכנסתי לעולם הכושר, נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
                 </span>
-                <span className="text-foreground font-semibold">בצבא כלוחם נחשפתי לכושר קרבי ולמשחק המנטלי.</span>
                 <span className="text-foreground font-semibold">
-                  {" "}
-                  בתקופת השירות גם נפצעתי, וזה הכריח אותי להבין אימון נכון וללמוד שיקום ופציעות ספורט כמו שצריך ברמה
-                  מקצועית.
+                  בצבא כלוחם נחשפתי לכושר קרבי ולמשחק המנטלי. בהמשך גם נפצעתי,
+                </span>
+                <span className="text-foreground font-semibold">
+                  וזה הכריח אותי להבין אימון נכון, פציעות ספורט ושיקום כמו שצריך.
                 </span>
 
                 <span className="text-foreground font-semibold">
