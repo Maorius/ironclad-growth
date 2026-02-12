@@ -51,23 +51,23 @@ const BioSection = () => {
           <div className="order-1 lg:order-1 space-y-6 lg:pt-2">
             <div className="text-xl md:text-2xl leading-relaxed text-foreground/90 space-y-4">
               <p>
-                <span className="text-3xl md:text-4xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים
-                מאוד.
+                <span className="text-3xl md:text-4xl font-semibold text-foreground">
+                  שמי יונתן עם-שלום, נעים מאוד.
+                </span>
               </p>
 
               <p>
-                <span className="text-foreground font-semibold">הייתי פעם נער שחיף עם כרס, חלש וחסר ביטחון,</span>
-                <span className="text-foreground font-semibold">עד כדי פחד להוריד חולצה ליד אנשים.</span>
-                <span className="text-foreground font-assistant">החלטתי לשנות.</span>
-                <span className="text-foreground font-assistant">
-                  נכנסתי לעולם הכושר, נשאבתי לקליסטניקס, ובצבא כלוחם למדתי מה זה משמעת אמיתית.
-                </span>
+                הייתי פעם <span className="text-foreground font-semibold">נער שחיף עם כרס</span>, חלש וחסר ביטחון עד ש
+                <span className="text-foreground font-semibold">פחדתי להוריד חולצה</span> ליד אנשים.
+              </p>
 
-                <span className="text-foreground font-assistant">אחרי שנפצעתי חקרתי שיקום ופציעות ספורט לעומק.</span>
+              <p>
+                התחלתי להתאמן, חקרתי את התחום לעומק, התאהבתי בקליסטניקס, עברתי גם כושר קרבי, למדתי המון על אימון נכון
+                ושיקום והיום אני מלווה גברים בתהליך מסודר כדי לחסוך להם את הטעויות שאני עשיתי בדרך.
               </p>
 
               <p className="text-2xl md:text-3xl font-semibold text-foreground">
-                היום אני עוזר לגברים לבנות גוף חזק וביטחון בצורה מסודרת, בלי קסמים ובלי קיצורי דרך.
+                המטרה: גוף חזק וביטחון בלי קסמים ובלי קיצורי דרך.
               </p>
             </div>
 
