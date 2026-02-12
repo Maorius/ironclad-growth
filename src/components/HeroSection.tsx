@@ -5,7 +5,7 @@ import smokeBg from "@/assets/smoke-bg.png";
 const bullets = [
   "לפי הלוז שלך: חדר כושר / בית / פארק",
   "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
-  "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
+  "מעקב שבועי + וואטסאפ שתישאר במסלול ותתקדם",
 ];
 
 const HeroSection = () => {
@@ -43,7 +43,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg md:text-2xl lg:text-3xl text-foreground/90 font-medium max-w-[38ch] mx-auto md:ml-auto">
-              אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
+              אתה עושה את העבודה אני דואג שתראה מזה תוצאות.
             </p>
 
             {/* RTL bullets */}
