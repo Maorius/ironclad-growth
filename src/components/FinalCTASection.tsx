@@ -42,12 +42,12 @@ const FinalCTASection = () => {
               </a>
             </Button>
 
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-4 text-2xl md:text-3xl text-muted-foreground">
               מענה מהיר בוואטסאפ
             </p>
           </div>
 
-          <p className="text-lg text-muted-foreground pt-8">
+          <p className="text-2xl md:text-3xl text-muted-foreground pt-8">
             יש עוד שאלה?{" "}
             <a
               href={WHATSAPP_LINK}
