@@ -32,7 +32,7 @@ const HeroSection = () => {
                 "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
                 "מעקב שבועי + וואטסאפ — שתישאר במסלול ותתקדם",
               ].map((item, index) => (
-                <div key={index} className="flex items-start gap-3 text-foreground/95">
+                <div className="flex flex-row-reverse items-start justify-end gap-3">
                   <span className="text-primary text-xl leading-none mt-0.5">✓</span>
                   <span className="text-base md:text-lg lg:text-xl font-medium">{item}</span>
                 </div>
