@@ -22,11 +22,11 @@ const HeroSection = () => {
               מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
             </h1>
 
-            <p className="text-lg md:text-2xl lg:text-3xl text-foreground/90 font-medium max-w-2xl mx-auto md:mx-0 md:mr-auto">
+            <p className="text-lg md:text-2xl lg:text-3xl text-foreground/90 font-medium max-w-[32ch] md:max-w-[38ch] mr-auto md:mr-0">
               אתה עושה את העבודה — אני דואג שתראה מזה תוצאות.
             </p>
 
-            <div className="flex flex-col items-end gap-2.5">
+            <div className="flex flex-col items-center md:items-start gap-2.5 pt-1">
               {[
                 "לפי הלוז שלך: חדר כושר / בית / פארק",
                 "הרגלי תזונה אפקטיביים (לא תפריט קשיח שמבלבל אותך)",
@@ -39,7 +39,7 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <div className="flex flex-col items-center md:items-end">
+            <div className="space-y-3 pt-3">
               <Button
                 onClick={scrollToFinalCTA}
                 size="lg"
