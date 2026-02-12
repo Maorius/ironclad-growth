@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import goalWeightLoss from "@/assets/goal-weight-loss.jpg";
 import goalToning from "@/assets/goal-toning.jpg";
 import goalCalisthenics from "@/assets/goal-calisthenics.jpg";
@@ -9,10 +10,38 @@ const goals = [
 ];
 
 const GoalsSection = () => {
+  const titleRef = useRef<HTMLHeadingElement | null>(null);
+  const [titleInView, setTitleInView] = useState(false);
+
+  useEffect(() => {
+    const el = titleRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTitleInView(true);
+          observer.disconnect(); // run once
+        }
+      },
+      { threshold: 0.25, rootMargin: "0px 0px -10% 0px" },
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="section-padding bg-background">
       <div className="container-premium">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">
+        <h2
+          ref={titleRef}
+          className={[
+            "text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16",
+            "transition-all duration-700 ease-out will-change-transform",
+            titleInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10",
+          ].join(" ")}
+        >
           מה <span className="text-gradient">המטרה</span> שלך?
         </h2>
 
@@ -30,9 +59,7 @@ const GoalsSection = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-                <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
-                  {goal.title}
-                </h3>
+                <h3 className="text-2xl lg:text-3xl font-bold text-foreground">{goal.title}</h3>
               </div>
             </div>
           ))}
