@@ -51,8 +51,9 @@ const BioSection = () => {
           <div className="order-1 lg:order-1 space-y-6 lg:pt-2">
             <div className="text-xl md:text-2xl leading-relaxed text-foreground/90 space-y-4">
               <p>
-                <span className="text-3xl md:text-4xl font-semibold text-foreground">שמי יונתן עם-שלום</span>, נעים
-                מאוד.
+                <span className="text-3xl md:text-4xl font-semibold text-foreground">
+                  שמי יונתן עם-שלום , נעים מאוד.
+                </span>
               </p>
 
               <p>
