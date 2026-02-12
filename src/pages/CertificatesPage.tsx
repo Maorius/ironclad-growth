@@ -3,22 +3,25 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, ArrowRight, X } from "lucide-react";
 
-// Placeholder certificate images - to be replaced with actual certificates
+import personalTrainer from "@/assets/certificates/personal-trainer.jpg";
+import functionalTraining from "@/assets/certificates/functional-training.jpg";
+import fitnessInstructor from "@/assets/certificates/fitness-instructor.jpg";
+
 const certificates = [
   {
     id: 1,
-    title: "תעודת מאמן כושר",
-    image: "/placeholder.svg",
+    title: "מאמן אישי",
+    image: personalTrainer,
   },
   {
     id: 2,
-    title: "הסמכה באימון פונקציונלי",
-    image: "/placeholder.svg",
+    title: "אימון פונקציונלי",
+    image: functionalTraining,
   },
   {
     id: 3,
     title: "מדריך כושר גופני ובריאות",
-    image: "/placeholder.svg",
+    image: fitnessInstructor,
   },
 ];
 
@@ -53,7 +56,7 @@ const CertificatesPage = () => {
             <div className="bg-gradient-card rounded-2xl p-8 shadow-premium">
               {/* Main Image */}
               <div
-                className="aspect-[4/3] rounded-xl overflow-hidden bg-muted flex items-center justify-center cursor-pointer mb-6"
+                className="aspect-[3/4] max-h-[70vh] md:max-h-[600px] rounded-xl overflow-hidden bg-muted flex items-center justify-center cursor-pointer mb-6 mx-auto"
                 onClick={() => setLightboxOpen(true)}
               >
                 <img
