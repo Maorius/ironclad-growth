@@ -6,7 +6,6 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import WhoSection from "@/components/WhoSection";
 import FinalCTASection from "@/components/FinalCTASection";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -19,7 +18,6 @@ const Index = () => {
       <FAQSection />
       <WhoSection />
       <FinalCTASection />
-      <Footer />
     </main>
   );
 };
