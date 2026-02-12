@@ -70,7 +70,8 @@ const BioSection = () => {
                 <span className="text-foreground font-semibold">בצבא כלוחם נחשפתי לכושר קרבי ולמשחק המנטלי.</span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  בתקופת השירות גם נפצעתי, וזה הכריח אותי ללמוד שיקום ופציעות ספורט כמו שצריך ברמה מקצועית.
+                  בתקופת השירות גם נפצעתי, וזה הכריח אותי להבין אימון נכון וללמוד שיקום ופציעות ספורט כמו שצריך ברמה
+                  מקצועית.
                 </span>
                 <span className="text-foreground font-semibold">
                   היום אני מלווה גברים אונליין ובפרונטלי בנתניה בתהליך מסודר:
