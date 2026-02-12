@@ -74,7 +74,7 @@ const BioSection = () => {
                   מקצועית.
                 </span>
                 <span className="text-foreground font-semibold">
-                  היום אני מלווה גברים אונליין ובפרונטלי בנתניה בשיטה ייחודית שאני פיתחתי
+                  היום אני מלווה גברים אונליין ובפרונטלי בנתניה בשיטה ייחודית שאני פיתחתי.
                 </span>
                 <span className="text-foreground font-semibold">על מנת שתוכלו להחזיר שליטה על הגוף שלכם</span>
               </p>
