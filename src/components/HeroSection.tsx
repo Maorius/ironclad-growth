@@ -20,24 +20,32 @@ const HeroSection = () => {
       <img src={smokeBg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-70" />
       <div className="absolute inset-0 bg-black/30" />
 
-      <div className="container-premium relative z-10 py-12 md:py-16">
-        {/* IMPORTANT: items-end anchors image column to bottom */}
+      {/* FIX 1: שיניתי את py-12 ל- pt-12 (רק למעלה) והוספתי pb-0
+         כדי שהקונטיינר יגיע עד הקצה התחתון והתמונה תוכל לשבת עליו
+      */}
+      <div className="container-premium relative z-10 pt-12 md:pt-16 pb-0">
+        {/* items-end מוודא שהאלמנטים מיושרים לתחתית */}
         <div className="grid items-end gap-10 md:gap-12 md:grid-cols-2">
           {/* IMAGE (left on desktop) */}
+          {/* אין צורך בשינוי כאן, מכיוון שהורדנו את ה-Padding מההורה, התמונה תשב בול למטה */}
           <div className="order-2 md:order-1 self-end flex justify-center md:justify-start animate-scale-in">
-            {/* Fixed height + absolute bottom = no floating even with transparent PNG */}
+            {/* הורדתי את ה-Padding התחתון, אז התמונה תיגע ברצפה של הסקשן */}
             <div className="relative w-full h-[360px] sm:h-[420px] md:h-[520px] lg:h-[600px]">
               <div className="absolute -inset-6 bg-gradient-accent rounded-2xl opacity-20 blur-2xl" />
               <img
                 src={heroYonatan}
                 alt="יונתן עם-שלום - מאמן כושר"
+                // bottom-0 מוודא שהתמונה צמודה לתחתית ה-DIV שלה
                 className="absolute bottom-0 left-0 right-0 mx-auto md:mx-0 md:right-auto w-[82%] max-w-md md:w-full md:max-w-lg object-contain drop-shadow-2xl"
               />
             </div>
           </div>
 
           {/* TEXT (right on desktop) */}
-          <div className="order-1 md:order-2 text-center md:text-right space-y-4 md:space-y-5 animate-fade-in">
+          {/* FIX 2: הוספתי pb-12 md:pb-16 כאן במיוחד
+             כדי שהטקסט ישמור על המרווח המקורי ולא יידבק למטה, בעוד שהתמונה כן נדבקת
+          */}
+          <div className="order-1 md:order-2 text-center md:text-right space-y-4 md:space-y-5 animate-fade-in pb-12 md:pb-16">
             <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[1.05] tracking-tight">
               מרגיש שהגוף שלך <span className="text-gradient">לא משדר</span> את מי שאתה
             </h1>
