@@ -73,9 +73,11 @@ const BioSection = () => {
                   בתקופת השירות גם נפצעתי, וזה הכריח אותי להבין אימון נכון וללמוד שיקום ופציעות ספורט כמו שצריך ברמה
                   מקצועית.
                 </span>
+
                 <span className="text-foreground font-semibold">
                   היום אני מלווה גברים אונליין ובפרונטלי בנתניה בשיטה ייחודית שאני פיתחתי.
                 </span>
+
                 <span className="text-foreground font-semibold">על מנת שתוכלו להחזיר שליטה על הגוף שלכם</span>
               </p>
 
