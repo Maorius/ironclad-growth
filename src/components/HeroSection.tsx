@@ -39,7 +39,7 @@ const HeroSection = () => {
               ))}
             </div>
 
-            <div className="space-y-3 pt-3">
+            <div className="flex flex-col items-center md:items-end">
               <Button
                 onClick={scrollToFinalCTA}
                 size="lg"
