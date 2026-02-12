@@ -71,7 +71,7 @@ const FAQSection = () => {
             </a>
           </Button>
 
-          <p className="text-lg text-muted-foreground">
+          <p className="text-2xl md:text-3xl text-muted-foreground">
             יש שאלה שלא עניתי עליה?{" "}
             <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
               שלח לי הודעה בוואטסאפ
