@@ -62,9 +62,9 @@ const BioSection = () => {
                 <span className="text-foreground font-semibold">החלטתי לשנות ונכנסתי לעולם הכושר, </span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
+                  ,נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
                 </span>
-                <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. אחר כך נפצעתי,</span>
+                <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. אחר כך נפצעתי, </span>
                 <span className="text-foreground font-semibold">
                   ושם הבנתי שההבדל בין “להתאמן” לבין “להתקדם” הוא לעשות את הדברים נכון, חכם, ובקצב שאפשר להתמיד בו.{" "}
                 </span>
