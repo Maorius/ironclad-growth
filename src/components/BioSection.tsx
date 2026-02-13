@@ -66,7 +66,8 @@ const BioSection = () => {
                 </span>
                 <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. ואז נפצעתי, </span>
                 <span className="text-foreground font-semibold">
-                  ושם הבנתי שכדי להתקדם לא צריך להתאמן יותר, צריך להתאמן נכון, חכם, ובקצב שאפשר להתמיד בו.{" "}
+                  ושם הבנתי דבר פשוט! שכדי להתקדם לא צריך להתאמן יותר, צריך להתאמן נכון, חכם, ובקצב שאפשר להתמיד
+                  בו.{" "}
                 </span>
 
                 <span className="text-foreground font-semibold">
