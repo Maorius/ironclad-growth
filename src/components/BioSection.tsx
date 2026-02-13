@@ -57,12 +57,12 @@ const BioSection = () => {
               </p>
 
               <p>
-                <span className="text-foreground font-semibold">פעם הייתי נער שחיף עם כרס. חלש, חסר ביטחון, </span>
+                <span className="text-foreground font-semibold">פעם הייתי נער שחיף עם כרס. חלש וחסר ביטחון, </span>
                 <span className="text-foreground font-semibold">עד שפחדתי להוריד חולצה ליד אנשים. </span>
-                <span className="text-foreground font-semibold">החלטתי לשנות. </span>
+                <span className="text-foreground font-semibold">החלטתי לשנות ונכנסתי לעולם הכושר, </span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  נכנסתי לעולם הכושר, נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
+                  ,נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
                 </span>
                 <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. אחר כך נפצעתי,</span>
                 <span className="text-foreground font-semibold">
