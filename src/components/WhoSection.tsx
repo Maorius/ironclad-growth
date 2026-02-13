@@ -73,7 +73,7 @@ const WhoSection = () => {
             onClick={scrollToFinalCTA}
             className="text-primary hover:text-primary/80 font-medium transition-colors text-2xl md:text-3xl"
           >
-            נשמע מתאים? בוא נבדוק ←
+            נשמע מתאים? בוא נתחיל ←
           </button>
         </div>
       </div>
