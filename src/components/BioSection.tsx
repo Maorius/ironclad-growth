@@ -62,7 +62,7 @@ const BioSection = () => {
                 <span className="text-foreground font-semibold">החלטתי לשנות ונכנסתי לעולם הכושר, </span>
                 <span className="text-foreground font-semibold">
                   {" "}
-                  ,נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
+                  נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
                 </span>
                 <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. ואז נפצעתי, </span>
                 <span className="text-foreground font-semibold">
@@ -74,7 +74,7 @@ const BioSection = () => {
                   חשק.{" "}
                 </span>
 
-                <span className="text-foreground font-semibold">ותייצר התקדמות עקבית לאורך זמן.</span>
+                <span className="text-foreground font-semibold">ותייצר התקדמות עקבית לאורך זמן. </span>
               </p>
 
               <p className="text-2xl md:text-3xl font-semibold text-foreground">
