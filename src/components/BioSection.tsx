@@ -64,17 +64,17 @@ const BioSection = () => {
                   {" "}
                   ,נשאבתי לקליסטניקס, והתאהבתי בשיטה שמביאה שליטה אמיתית בגוף.{" "}
                 </span>
-                <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. אחר כך נפצעתי, </span>
+                <span className="text-foreground font-semibold">בצבא כלוחם למדתי מה זה חוסן. ואז נפצעתי, </span>
                 <span className="text-foreground font-semibold">
-                  ושם הבנתי שההבדל בין “להתאמן” לבין “להתקדם” הוא לעשות את הדברים נכון, חכם, ובקצב שאפשר להתמיד בו.{" "}
+                  ושם הבנתי שכדי להתקדם לא צריך להתאמן יותר, צריך להתאמן נכון, חכם, ובקצב שאפשר להתמיד בו.{" "}
                 </span>
 
                 <span className="text-foreground font-semibold">
-                  היום אני מלווה גברים לחיטוב ולביטחון בגוף שלהם, באמצעות שיטה ייחודית שפיתחתי כך שתוכל להתמיד בה גם
-                  כשאין חשק.{" "}
+                  היום אני מלווה גברים לחיטוב ולביטחון בגוף שלהם, באמצעות שיטה ייחודית שפיתחתי כך שתעבוד גם כשאין
+                  חשק.{" "}
                 </span>
 
-                <span className="text-foreground font-semibold">על מנת שתוכלו להחזיר שליטה על הגוף שלכם.</span>
+                <span className="text-foreground font-semibold">ותייצר התקדמות עקבית לאורך זמן.</span>
               </p>
 
               <p className="text-2xl md:text-3xl font-semibold text-foreground">
