@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X, CheckCircle, Loader2 } from "lucide-react";
 
-const FORMSPREE_URL = "https://formspree.io/f/XXXXXXXX";
+const FORMSPREE_URL = "https://formspree.io/f/meelrykb";
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -62,8 +62,12 @@ const ContactFormModal = ({ isOpen, onClose }: ContactFormModalProps) => {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      onClick={(e) => { if (e.target === e.currentTarget) closeModal(); }}
-      onKeyDown={(e) => { if (e.key === "Escape") closeModal(); }}
+      onClick={(e) => {
+        if (e.target === e.currentTarget) closeModal();
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Escape") closeModal();
+      }}
       role="dialog"
       aria-modal="true"
     >
