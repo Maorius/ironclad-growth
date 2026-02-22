@@ -1,10 +1,9 @@
 import { Check, X } from "lucide-react";
+import { useState } from "react";
+import ContactFormModal from "@/components/ContactFormModal";
 
 const WhoSection = () => {
-  const scrollToFinalCTA = () => {
-    const element = document.getElementById("final-cta");
-    element?.scrollIntoView({ behavior: "smooth" });
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const suitable = [
     "רוצה לעשות שינוי אמיתי ומוכן להשקיע בעצמך",
@@ -70,13 +69,14 @@ const WhoSection = () => {
 
         <div className="text-center mt-12">
           <button
-            onClick={scrollToFinalCTA}
+            onClick={() => setIsModalOpen(true)}
             className="text-primary hover:text-primary/80 font-medium transition-colors text-2xl md:text-3xl"
           >
             נשמע מתאים? בוא נתחיל ←
           </button>
         </div>
       </div>
+      <ContactFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 };
