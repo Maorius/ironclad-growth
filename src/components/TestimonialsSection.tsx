@@ -26,8 +26,8 @@ type ClientSlide = {
 const slides: ClientSlide[] = [
   {
     name: "יאיר",
-    age: 24,
-    location: "נתניה",
+    age: 19,
+    location: "צפת",
     pairs: [
       { before: client1Before1, after: client1After1 },
       { before: client1Before2, after: client1After2 },
@@ -102,25 +102,15 @@ const TestimonialsSection = () => {
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            לא עוד דיבורים.{" "}
-            <span className="text-gradient">הנה מה שגברים שעשו איתי תהליך אומרים.</span>
+            לא עוד דיבורים. <span className="text-gradient">הנה מה שגברים שעשו איתי תהליך אומרים.</span>
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground">
-            אנשים אמיתיים. מילים שלהם. שינוי אמיתי.
-          </p>
+          <p className="text-xl md:text-2xl text-muted-foreground">אנשים אמיתיים. מילים שלהם. שינוי אמיתי.</p>
         </div>
 
         {/* Carousel */}
-        <div
-          className="relative"
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-        >
+        <div className="relative" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           {/* Slide content */}
-          <div
-            key={current}
-            className="animate-fade-in"
-          >
+          <div key={current} className="animate-fade-in">
             {/* Before/After pairs grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
               {slide.pairs.map((pair, i) => (
