@@ -98,7 +98,7 @@ const BioSection = () => {
                 size="lg"
                 className="text-xl px-10 py-7 font-semibold shadow-glow hover:shadow-primary/40 transition-all duration-300 hover:scale-105"
               >
-                לקביעת שיחת אפיון בחינם
+                אני רוצה להתחיל שינוי
               </Button>
 
               <Link
