@@ -121,7 +121,7 @@ const ContactFormModal = ({ isOpen, onClose }: ContactFormModalProps) => {
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="050-0000000"
+                  placeholder="מספר טלפון"
                   dir="rtl"
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-colors text-left"
                 />
