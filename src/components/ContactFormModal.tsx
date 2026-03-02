@@ -122,7 +122,7 @@ const ContactFormModal = ({ isOpen, onClose }: ContactFormModalProps) => {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="050-0000000"
-                  dir="ltr"
+                  dir="rtl"
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-colors text-left"
                 />
                 {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
