@@ -123,7 +123,7 @@ const ContactFormModal = ({ isOpen, onClose }: ContactFormModalProps) => {
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="מספר טלפון"
                   dir="rtl"
-                  className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-colors text-left"
+                  className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-colors text-right"
                 />
                 {errors.phone && <p className="text-destructive text-sm mt-1">{errors.phone}</p>}
               </div>
