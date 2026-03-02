@@ -130,7 +130,7 @@ const ContactFormModal = ({ isOpen, onClose }: ContactFormModalProps) => {
 
               <div>
                 <label htmlFor="modal-message" className="block text-sm font-medium text-foreground mb-1.5">
-                  הערות (אופציונלי)
+                  ספר לי מה תוקע אותך
                 </label>
                 <textarea
                   id="modal-message"
