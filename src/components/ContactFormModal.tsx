@@ -136,7 +136,7 @@ const ContactFormModal = ({ isOpen, onClose }: ContactFormModalProps) => {
                   id="modal-message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder="ספר לי קצת על עצמך..."
+                  placeholder="מה הכי תוקע אותך היום..."
                   rows={3}
                   className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-colors resize-none"
                 />
