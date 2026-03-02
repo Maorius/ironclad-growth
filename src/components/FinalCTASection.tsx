@@ -30,7 +30,7 @@ const FinalCTASection = () => {
               className="text-2xl px-10 py-7 font-semibold shadow-glow hover:shadow-primary/50 transition-all duration-300 hover:scale-105 inline-flex items-center gap-3"
             >
               <MessageCircle className="w-6 h-6" />
-              בדיקת התאמה בחינם
+              אני רוצה להתחיל שינוי
             </Button>
 
             <p className="mt-4 text-2xl md:text-3xl text-muted-foreground">אם הגעת עד לכאן זה אומר שזה רלוונטי</p>
