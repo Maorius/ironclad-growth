@@ -103,7 +103,7 @@ const TestimonialsSection = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             לא עוד דיבורים. <span className="text-gradient">הנה מה שגברים שעשו איתי תהליך אומרים.</span>
           </h2>
-          <p className="text-xl md:text-2xl text-muted-foreground">אנשים אמיתיים. מילים שלהם. שינוי אמיתי.</p>
+          <p className="text-xl md:text-2xl text-muted-foreground">לא עוד דיבורים, תוצאות!</p>
         </div>
 
         {/* Carousel */}
