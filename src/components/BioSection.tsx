@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import bioYonatan from "@/assets/bio-yonatan.png";
+import bioYonatan from "@/assets/hero-yonatan2.png";
 import { ArrowLeft, Check } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import ContactFormModal from "@/components/ContactFormModal";
