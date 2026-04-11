@@ -94,7 +94,7 @@ const BioSection = () => {
             {/* z-5 – ring TOP half: behind portrait so head emerges in front */}
             <div
               className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-[5] pointer-events-none"
-              style={{ clipPath: "inset(0 0 10% 0)" }}
+              style={{ clipPath: "inset(0 0 5% 0)" }}
             >
               <div className="absolute inset-0 rounded-full border-2 border-primary/30 shadow-[0_0_60px_hsl(var(--primary),0.10)]" />
             </div>
@@ -102,7 +102,7 @@ const BioSection = () => {
             {/* z-20 – ring BOTTOM half: in front of portrait for depth effect */}
             <div
               className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-20 pointer-events-none"
-              style={{ clipPath: "inset(90% 0 0 0)" }}
+              style={{ clipPath: "inset(95% 0 0 0)" }}
             >
               <div className="absolute inset-0 rounded-full border-2 border-primary/30 shadow-[0_0_60px_hsl(var(--primary),0.10)]" />
               <div className="absolute inset-0 rounded-full shadow-[inset_0_-40px_60px_rgba(0,0,0,0.55)]" />
