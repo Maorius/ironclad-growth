@@ -97,7 +97,7 @@ const BioSection = () => {
             </div>
 
             {/* z-20 – ring FRONT half (bottom 60%) — in front of the portrait */}
-            <div className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-20 pointer-events-none overflow-hidden" style={{ clipPath: 'inset(40% 0 0 0)' }}>
+            <div className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-20 pointer-events-none overflow-hidden" style={{ clipPath: 'inset(80% 0 0 0)' }}>
               <div className="absolute inset-0 rounded-full border-[3px] border-primary/40 shadow-[0_0_60px_hsl(var(--primary),0.15)]" />
               <div className="absolute inset-0 rounded-full shadow-[inset_0_-50px_70px_rgba(0,0,0,0.6)]" />
             </div>
