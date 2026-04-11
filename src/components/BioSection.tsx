@@ -93,16 +93,7 @@ const BioSection = () => {
 
             {/* z-20 – ring frame sits in front of portrait at the intersection,
                 reinforcing the "frame in the foreground" look */}
-            {/* z-5 – ring BEHIND portrait (visible on top half) */}
-            <div className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-[5] pointer-events-none">
-              <div className="absolute inset-0 rounded-full border-2 border-primary/30 shadow-[0_0_60px_hsl(var(--primary),0.10)]" />
-            </div>
-
-            {/* z-20 – ring FRONT of portrait (only bottom half visible) */}
-            <div
-              className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-20 pointer-events-none"
-              style={{ clipPath: "inset(50% 0 0 0)" }}
-            >
+            <div className="absolute bottom-0 inset-x-0 h-72 md:h-[22rem] lg:h-[26rem] z-20 pointer-events-none">
               <div className="absolute inset-0 rounded-full border-2 border-primary/30 shadow-[0_0_60px_hsl(var(--primary),0.10)]" />
               <div className="absolute inset-0 rounded-full shadow-[inset_0_-40px_60px_rgba(0,0,0,0.55)]" />
             </div>
