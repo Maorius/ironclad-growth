@@ -117,7 +117,7 @@ const BioSection = () => {
           {/* Name intro */}
           <div
             className={cn(
-              "text-center md:text-right mb-8 transition-all duration-700 delay-300",
+              "text-center mb-8 transition-all duration-700 delay-300",
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
             )}
           >
@@ -129,7 +129,7 @@ const BioSection = () => {
           {/* Body paragraphs — Matan-style mixed muted/foreground weights */}
           <div
             className={cn(
-              "text-muted-foreground text-base md:text-lg lg:text-xl leading-relaxed space-y-5 mb-10 transition-all duration-700 delay-[400ms]",
+              "text-center text-muted-foreground text-lg md:text-2xl lg:text-3xl leading-relaxed space-y-5 mb-10 transition-all duration-700 delay-[400ms]",
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
             )}
           >
@@ -170,16 +170,16 @@ const BioSection = () => {
           {/* Credentials strip */}
           <div
             className={cn(
-              "flex flex-col gap-3 py-6 border-y border-border mb-10 transition-all duration-700 delay-[550ms]",
+              "flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 items-center justify-center py-6 border-y border-border mb-10 transition-all duration-700 delay-[550ms]",
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
             )}
           >
             {credentialBullets.map((item, i) => (
-              <div key={i} className="flex items-center gap-3">
+              <div key={i} className="flex items-center gap-2">
                 <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/15 flex items-center justify-center">
                   <Check className="w-3 h-3 text-primary" />
                 </div>
-                <span className="text-muted-foreground text-base md:text-lg">{item}</span>
+                <span className="text-muted-foreground text-sm md:text-base text-center">{item}</span>
               </div>
             ))}
           </div>
