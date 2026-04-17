@@ -51,7 +51,7 @@ const BioSection = () => {
           )}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            המאמן <span className="text-gradient">שילווה אותך</span>
+            <span className="text-gradient">נעים להכיר</span>
           </h2>
         </div>
 
