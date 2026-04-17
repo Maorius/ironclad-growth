@@ -46,12 +46,12 @@ const BioSection = () => {
         ══════════════════════════════════════ */}
         <div
           className={cn(
-            "text-center mb-12 md:mb-16 transition-all duration-700",
+            "text-center mb-20 md:mb-28 transition-all duration-700",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8",
           )}
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            <span className="text-gradient">נעים להכיר</span>
+            <span className="text-white">נעים להכיר</span>
           </h2>
         </div>
 
